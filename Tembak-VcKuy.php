@@ -2,8 +2,8 @@
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo color("orange","# # # # # # # # # # # # # # # # # # # # # # # \n");
-echo color("blue","  [♥]  Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
-echo color("red","   [♡] TOLONG DIBACA DULU SEBELUM MENGGUNAKAN SC \n");
+echo color("blue","  [♥]  Time  : ".date('[Y-m-d] [H:i:s]')."   \n");
+echo color("red","   [♡] TOLONG DIBACA DULU SEBELUM MENGGUNAKAN SC TOD \n");
 echo color("purple","[♥] NGETIK NOMORNYA BEGINI YA TOD 62xxxxxxxxxx \n");
 echo color("nevy","  [♡] JANGAN LUPA FOLLOW IG GUE YA : @Dwiirfan187 Ye TOD \n");
 echo color("yellow","[♥] KALO GA NGAMBIL OTOMATIS GAGAL BERARTI \n");
@@ -88,7 +88,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo color("yellow","✔️▶️ BERHASIL MEDAFTAR TOD\n");
         $token = getStr('"access_token":"','"',$verif);
         $uuid = getStr('"resource_owner_id":',',',$verif);
-        echo color("pink","+] Your access token : ".$token."\n\n");
+        echo color("brown","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
         echo color("green","\n▬▬▬▬▬▬▬▬▬▬▬▬🎫AUTO CLAIM KAYANYA TOD🎫▬▬▬▬▬▬▬▬▬▬▬▬");
         echo "\n".color("red","🔐▶️ INI VOC BELANJA TOD");
