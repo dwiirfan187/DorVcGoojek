@@ -12,7 +12,7 @@ echo color("yellow"," [♥] SCRIPT INI GRATIS, BILA ADA YG JUAL CHAT ADMIN BAKU 
 echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
 	echo "\n";
 echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-echo "\e[93mLO PUNYA AKUN BUAT LOGIN ?: ";	
+echo "\e[93mLO PUNYA AKUN BUAT LOGIN KAGAK ?: ";	
        $pilihy = trim(fgets(STDIN));
 if($pilihy == "y" || $pilihy == "punya")
 echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
@@ -208,11 +208,11 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
                                         $debug['text'] = $pesan;
                                         $debug['respon'] = json_decode($datas, true);
          setpin:
-         echo "\n".color("purple","🔧▶️ SET PIN CUK BIAR AMAN !!!: y/n ");
+         echo "\n".color("blue","🔧▶️ SET PIN CUK BIAR AMAN !!!: y/n ");
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("red","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN MU = 123321 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
+         echo color("green","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN MU = 123321 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
          $data2 = '{"pin":"123321"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp pin: ";
