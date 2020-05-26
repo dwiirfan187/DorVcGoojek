@@ -1,6 +1,6 @@
-<?php
-clear
 sleep 1
+clear
+<?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo color("yellow","# # # # # # # # # # # # # # # # # # # # # # # \n");
