@@ -1,7 +1,9 @@
 <?php
+clear
+sleep 1
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo color("orange","# # # # # # # # # # # # # # # # # # # # # # # \n");
+echo color("yellow","# # # # # # # # # # # # # # # # # # # # # # # \n");
 echo color("blue","  [♥]  Time  : ".date('[Y-m-d] [H:i:s]')."   \n");
 echo color("red","   [♡] TOLONG DIBACA DULU SEBELUM MENGGUNAKAN SC TOD \n");
 echo color("purple","[♥] NGETIK NOMORNYA BEGINI YA TOD 62xxxxxxxxxx \n");
@@ -128,14 +130,14 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHNGIRIM"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("red","🔓▶️ Message: ".$message);
-        echo "\n".color("green","🔐▶️ INI VOC REFRESH FOOD CUY");
+        echo "\n".color("green","🔐▶️ INI VOC FOOD B TOD");
         echo "\n".color("yellow","⏳▶️ Please wait");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(5);
         }
         sleep(3);
-        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHMAKAN"}');
+        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHMAKANB"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("blue","🔓▶️ Message: ".$messageboba09);
         sleep(3);
