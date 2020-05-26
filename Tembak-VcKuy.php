@@ -1,14 +1,12 @@
 <?php
-clear
-sleep 1
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo color("yellow","# # # # # # # # # # # # # # # # # # # # # # # \n");
 echo color("blue","  [♥]  Time  : ".date('[Y-m-d] [H:i:s]')."   \n");
 echo color("red","   [♡] TOLONG DIBACA DULU SEBELUM MENGGUNAKAN SC TOD \n");
 echo color("purple","[♥] NGETIK NOMORNYA BEGINI YA TOD 62xxxxxxxxxx \n");
-echo color("nevy","  [♡] JANGAN LUPA FOLLOW IG GUE YA : @Dwiirfan187 Ye TOD \n");
-echo color("yellow","[♥] KALO GA NGAMBIL OTOMATIS GAGAL BERARTI \n");
+echo color("yellow","  [♡] JANGAN LUPA FOLLOW IG GUE YA : @Dwiirfan187 Ye TOD \n");
+echo color("green","[♥] KALO GA NGAMBIL OTOMATIS GAGAL BERARTI \n");
 echo color("blue"," [♡] MAKLUM LAH TOD NAMANYA JUGA SC GRATISAN \n");
 echo color("yellow"," [♥] SCRIPT INI GRATIS, BILA ADA YG JUAL CHAT ADMIN BAKU HANTAM KITA \n");
 echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
@@ -102,7 +100,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHBELANJA"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
-        echo "\n".color("blue","🔓▶️ Message: ".$message);
+        echo "\n".color("green","🔓▶️ Message: ".$message);
         goto gocar;
         }else{
         echo "\n".color("red","🔐▶️ Message: ".$message);
